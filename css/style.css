@@ -1,0 +1,237 @@
+/* -----------------------
+  全般設定
+----------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.page {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  /* size */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* design */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+  background-color: #ffcc00;
+}
+
+.back-top i {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* -----------------------
+  ヘッダー
+----------------------- */
+header {
+  background-color: #b2eaff;
+  border-top: 10px solid #0182be;
+  height: 150px;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header.on {
+  position: fixed;
+  z-index: 1;
+}
+
+/* header.fade {
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+header.fade.on {
+  opacity: 1;
+} */
+
+
+header h1 {
+  margin: 30px 0 0 20px;
+}
+
+header nav {
+  margin: 30px 20px 0 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+
+/* -----------------------
+  メイン
+----------------------- */
+main {
+  width: 640px;
+}
+
+main article h2 {
+  background-color: #0182be;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+main .card {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-start;
+  opacity: 0;
+  /* スクロール前に非表示 */
+  position: relative;
+  left: -100px;
+}
+
+main .card.on {
+  opacity: 1;
+  left: 0;
+}
+
+main .card img {
+  margin-right: 20px;
+}
+
+main .card h3 {
+  font-size: 20px;
+  color: #0182be;
+  margin-bottom: 20px;
+}
+
+main .card p {
+  line-height: 1.5;
+}
+
+
+/* -----------------------
+  サイド
+----------------------- */
+aside {
+  width: 300px;
+}
+
+aside .banner {
+  margin-bottom: 20px;
+}
+
+aside .news {
+  border: 5px solid #0182be;
+  border-radius: 5px;
+}
+
+aside .news h2 {
+  background-color: #0182be;
+  color: #ffffff;
+  height: 45px;
+  padding: 12px 0 0 15px;
+}
+
+aside .news ul {
+  margin: 20px;
+}
+
+aside .news li {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* -----------------------
+  フッター
+----------------------- */
+footer {
+  background-color: #b2eaff;
+  border-bottom: 10px solid #b2eaff;
+  border-radius: 5px 5px 0 0;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer address {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* -----------------------
+  トップページ
+----------------------- */
+#home main .eyecatch {
+  margin-bottom: 20px;
+}
+
+#home main h2 {
+  font-size: 20px;
+  color: #0182be;
+  margin-bottom: 20px;
+}
+
+#home main p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* -----------------------
+  学科紹介
+----------------------- */
+
+/* -----------------------
+  入学案内
+----------------------- */
+
+/* -----------------------
+  アクセス
+----------------------- */
+#access main .mihama h3 {
+  font-size: 20px;
+  color: #0182be;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#access main .mihama p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
